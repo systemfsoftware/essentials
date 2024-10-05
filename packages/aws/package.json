@@ -1,0 +1,75 @@
+{
+  "name": "@systemfsoftware/aws",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Ryan Lee <ryanleecode@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systemfsoftware/essentials.git"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "@systemfsoftware/source": "./src/mod.ts",
+        "types": "./dist/esm/mod.d.ts",
+        "default": "./dist/esm/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/mod.d.ts",
+        "default": "./dist/commonjs/mod.js"
+      }
+    },
+    "./cloudfront": {
+      "import": {
+        "@systemfsoftware/source": "./src/cloudfront/mod.ts",
+        "types": "./dist/esm/cloudfront/mod.d.ts",
+        "default": "./dist/esm/cloudfront/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/cloudfront/mod.d.ts",
+        "default": "./dist/commonjs/cloudfront/mod.js"
+      }
+    },
+    "./cloudfront/consts": {
+      "import": {
+        "@systemfsoftware/source": "./src/cloudfront/consts.ts",
+        "types": "./dist/esm/cloudfront/consts.d.ts",
+        "default": "./dist/esm/cloudfront/consts.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/cloudfront/consts.d.ts",
+        "default": "./dist/commonjs/cloudfront/consts.js"
+      }
+    }
+  },
+  "module": "./dist/esm/mod.js",
+  "keywords": [
+    "aws"
+  ],
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "project": "./tsconfig.build.json",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/mod.ts",
+      "./cloudfront": "./src/cloudfront/mod.ts",
+      "./cloudfront/consts": "./src/cloudfront/consts.ts"
+    },
+    "sourceDialects": [
+      "@systemfsoftware/source"
+    ]
+  },
+  "scripts": {
+    "prepare": "pnpm turbo build",
+    "clean": "rimraf dist .tshy .tshy-build",
+    "build": "pnpm run clean && tshy"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts"
+}
