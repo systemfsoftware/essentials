@@ -1,6 +1,6 @@
 {
   "name": "@systemfsoftware/aws",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "repository": {
