@@ -1,2 +1,6 @@
 packages:
   - packages/*
+
+catalog:
+  "effect": "3.8.4"
+  "@effect/schema": "0.74.1"

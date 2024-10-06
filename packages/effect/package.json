@@ -1,0 +1,67 @@
+{
+  "name": "@systemfsoftware/effect",
+  "version": "0.0.0",
+  "author": "Ryan Lee <ryanleecode@gmail.com>",
+  "type": "module",
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts",
+  "module": "./dist/esm/mod.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systemfsoftware/essentials.git"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "@systemfsoftware/source": "./src/mod.ts",
+        "types": "./dist/esm/mod.d.ts",
+        "default": "./dist/esm/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/mod.d.ts",
+        "default": "./dist/commonjs/mod.js"
+      }
+    },
+    "./Layer": {
+      "import": {
+        "@systemfsoftware/source": "./src/layer.ts",
+        "types": "./dist/esm/layer.d.ts",
+        "default": "./dist/esm/layer.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/layer.d.ts",
+        "default": "./dist/commonjs/layer.js"
+      }
+    }
+  },
+  "keywords": [
+    "aws"
+  ],
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "project": "./tsconfig.build.json",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/mod.ts",
+      "./Layer": "./src/layer.ts"
+    },
+    "sourceDialects": [
+      "@systemfsoftware/source"
+    ]
+  },
+  "scripts": {
+    "prepare": "pnpm turbo build",
+    "clean": "rimraf dist .tshy .tshy-build",
+    "build": "pnpm run clean && tshy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "effect": "catalog:"
+  },
+  "peerDependencies": {
+    "effect": "catalog:"
+  }
+}
