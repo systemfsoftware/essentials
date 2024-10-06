@@ -1,12 +1,15 @@
 {
   "name": "@systemfsoftware/aws",
   "version": "0.0.2",
-  "type": "module",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/systemfsoftware/essentials.git"
   },
+  "type": "module",
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts",
+  "module": "./dist/esm/mod.js",
   "exports": {
     "./package.json": "./package.json",
     ".": {
@@ -54,7 +57,6 @@
       }
     }
   },
-  "module": "./dist/esm/mod.js",
   "keywords": [
     "aws"
   ],
@@ -81,7 +83,5 @@
   },
   "dependencies": {},
   "devDependencies": {},
-  "peerDependencies": {},
-  "main": "./dist/commonjs/mod.js",
-  "types": "./dist/commonjs/mod.d.ts"
+  "peerDependencies": {}
 }
