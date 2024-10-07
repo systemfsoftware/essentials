@@ -1,6 +1,6 @@
 {
   "name": "@systemfsoftware/effect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "type": "module",
   "main": "./dist/commonjs/mod.js",
@@ -62,6 +62,6 @@
     "effect": "catalog:"
   },
   "peerDependencies": {
-    "effect": "catalog:"
+    "effect": "^3.8.0"
   }
 }
