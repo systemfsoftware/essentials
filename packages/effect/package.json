@@ -1,6 +1,6 @@
 {
   "name": "@systemfsoftware/effect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "type": "module",
   "main": "./dist/commonjs/mod.js",

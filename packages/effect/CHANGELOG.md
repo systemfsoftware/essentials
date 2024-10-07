@@ -1,5 +1,11 @@
 # @systemfsoftware/effect
 
+## 0.0.3
+
+### Patch Changes
+
+- b5f1eb1: chore: widen effect peer dependency
+
 ## 0.0.1
 
 ### Patch Changes
