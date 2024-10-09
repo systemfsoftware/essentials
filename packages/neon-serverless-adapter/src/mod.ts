@@ -41,7 +41,11 @@ export function Adapter<T extends Adapter.TSchema = Record<string, never>>(
     const webSocketConstructor = yield* Socket.WebSocketConstructor
 
     yield* Effect.sync(() => {
-      neon.neonConfig.webSocketConstructor = webSocketConstructor
+      neon.neonConfig.webSocketConstructor = class {
+        constructor(url: string) {
+          return webSocketConstructor(url)
+        }
+      }
     })
 
     const pool = yield* Effect.sync(() => new neon.Pool({ connectionString }))
