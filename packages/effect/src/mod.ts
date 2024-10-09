@@ -1,1 +1,1 @@
-export * as Layer from './layer.js'
+export * as LogLayer from './log-layer.js'
