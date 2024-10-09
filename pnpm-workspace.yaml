@@ -4,3 +4,4 @@ packages:
 catalog:
   "effect": "^3.9.1"
   "@effect/schema": "^0.75.2"
+  "@effect/platform": "^0.68.1"
