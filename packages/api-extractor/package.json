@@ -1,6 +1,6 @@
 {
   "name": "@systemfsoftware/api-extractor",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "repository": {
     "type": "git",
