@@ -1,5 +1,11 @@
 # @systemfsoftware/neon-serverless-adapter
 
+## 0.1.0
+
+### Minor Changes
+
+- 860d08b: chore(neon)!: make drizzle peer dep
+
 ## 0.0.1
 
 ### Patch Changes

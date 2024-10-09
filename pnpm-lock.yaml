@@ -9,6 +9,9 @@ catalogs:
     '@effect/platform':
       specifier: ^0.68.1
       version: 0.68.1
+    drizzle-orm:
+      specifier: ~0.34.1
+      version: 0.34.1
     effect:
       specifier: ^3.9.1
       version: 3.9.1
@@ -67,13 +70,13 @@ importers:
       '@neondatabase/serverless':
         specifier: ^0.9.5
         version: 0.9.5
-      drizzle-orm:
-        specifier: ~0.34.1
-        version: 0.34.1(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)
     devDependencies:
       '@systemfsoftware/api-extractor':
         specifier: workspace:^
         version: link:../api-extractor
+      drizzle-orm:
+        specifier: 'catalog:'
+        version: 0.34.1(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)
       effect:
         specifier: 'catalog:'
         version: 3.9.1
