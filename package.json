@@ -11,6 +11,7 @@
     "format:check": "dprint check"
   },
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.47.9",
     "@total-typescript/tsconfig": "^1.0.4",
     "dprint": "^0.47.2",
     "rimraf": "^6.0.1",

@@ -55,11 +55,13 @@
   "scripts": {
     "prepare": "pnpm turbo build",
     "clean": "rimraf dist .tshy .tshy-build",
-    "build": "pnpm run clean && tshy"
+    "build": "pnpm run clean && tshy && pnpm run extract",
+    "extract": "api-extractor run"
   },
   "dependencies": {},
   "devDependencies": {
-    "effect": "catalog:"
+    "effect": "catalog:",
+    "@systemfsoftware/api-extractor": "workspace:^"
   },
   "peerDependencies": {
     "effect": "^3.8.0"
