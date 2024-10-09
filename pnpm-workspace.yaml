@@ -2,5 +2,5 @@ packages:
   - packages/*
 
 catalog:
-  "effect": "3.8.4"
-  "@effect/schema": "0.74.1"
+  "effect": "^3.9.1"
+  "@effect/schema": "^0.75.2"

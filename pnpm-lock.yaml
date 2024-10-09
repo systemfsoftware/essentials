@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     effect:
-      specifier: 3.8.4
-      version: 3.8.4
+      specifier: ^3.9.1
+      version: 3.9.1
 
 importers:
 
@@ -42,7 +42,7 @@ importers:
     devDependencies:
       effect:
         specifier: 'catalog:'
-        version: 3.8.4
+        version: 3.9.1
 
 packages:
 
@@ -297,8 +297,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.8.4:
-    resolution: {integrity: sha512-rOZ1XAi+Fb+fAHoUJ5FnJPSPZEBxVbCl5QWtOWFTgOeFHx0QpbK3pezWvq9OIxQPdwvSkPOw926qrs4xdD9dLA==}
+  effect@3.9.1:
+    resolution: {integrity: sha512-dxd+eiCqxOriBM12EQ6uIjn3cJpKIP7DfqafWTVEb45aMO157iEeDcO09SEdVSAy/OqpFlRF+4Lx7Hei1ipvOA==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -697,7 +697,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.8.4: {}
+  effect@3.9.1: {}
 
   emoji-regex@8.0.0: {}
 
