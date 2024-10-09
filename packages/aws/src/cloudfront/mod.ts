@@ -1,2 +1,2 @@
-export * from './cache-policy.js'
-export * from './origin-request.js'
+export * as CachePolicy from './cache-policy.js'
+export * as OriginRequest from './origin-request.js'
