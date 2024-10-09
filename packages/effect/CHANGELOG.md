@@ -1,5 +1,11 @@
 # @systemfsoftware/effect
 
+## 0.2.0
+
+### Minor Changes
+
+- 67ccef8: BREAKING CHANGE: rename logger module
+
 ## 0.1.1
 
 ### Patch Changes
