@@ -1,5 +1,12 @@
 # @systemfsoftware/neon-serverless-adapter
 
+## 0.2.0
+
+### Minor Changes
+
+- 6cbf5cc: chore: update effect packages
+- 7746ba4: chore: make @effect/platform a peer dependency
+
 ## 0.1.1
 
 ### Patch Changes

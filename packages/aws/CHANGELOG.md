@@ -1,5 +1,11 @@
 # @systemfsoftware/aws
 
+## 0.2.0
+
+### Minor Changes
+
+- 6cbf5cc: chore: update effect packages
+
 ## 0.1.1
 
 ### Patch Changes
