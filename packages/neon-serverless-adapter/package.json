@@ -36,7 +36,6 @@
     "extract": "api-extractor run"
   },
   "dependencies": {
-    "@effect/platform": "catalog:",
     "@neondatabase/serverless": "^0.9.5"
   },
   "devDependencies": {
@@ -45,6 +44,7 @@
     "@systemfsoftware/api-extractor": "workspace:^"
   },
   "peerDependencies": {
+    "@effect/platform": "catalog:",
     "drizzle-orm": "catalog:",
     "effect": "catalog:"
   }
