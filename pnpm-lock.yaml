@@ -7,14 +7,14 @@ settings:
 catalogs:
   default:
     '@effect/platform':
-      specifier: ^0.68.1
-      version: 0.68.1
+      specifier: ^0.69.9
+      version: 0.69.9
     drizzle-orm:
-      specifier: ~0.34.1
+      specifier: ^0.34.1
       version: 0.34.1
     effect:
-      specifier: ^3.9.1
-      version: 3.9.1
+      specifier: ^3.10.4
+      version: 3.10.4
 
 importers:
 
@@ -60,13 +60,13 @@ importers:
         version: link:../api-extractor
       effect:
         specifier: 'catalog:'
-        version: 3.9.1
+        version: 3.10.4
 
   packages/neon-serverless-adapter:
     dependencies:
       '@effect/platform':
         specifier: 'catalog:'
-        version: 0.68.1(@effect/schema@0.75.2(effect@3.9.1))(effect@3.9.1)
+        version: 0.69.9(effect@3.10.4)
       '@neondatabase/serverless':
         specifier: ^0.9.5
         version: 0.9.5
@@ -79,7 +79,7 @@ importers:
         version: 0.34.1(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)
       effect:
         specifier: 'catalog:'
-        version: 3.9.1
+        version: 3.10.4
 
 packages:
 
@@ -123,16 +123,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@effect/platform@0.68.1':
-    resolution: {integrity: sha512-eXYEnF0yqq1QpJVAx4Z4v/rYszHg/sT973XgUvj2UkaShcDBM1B2rN1pWRXx0RwjWWlqN0qDDVe2XkAf2u/xRw==}
+  '@effect/platform@0.69.9':
+    resolution: {integrity: sha512-gdp5rLxKLBBI895ycBRkuwCQHnYf8g6+Sdg5tFhuH+axIdgP4J8dGzIvYBGAkRMw/4k2BYeSKKf8ZONYnNWcWg==}
     peerDependencies:
-      '@effect/schema': ^0.75.2
-      effect: ^3.9.1
-
-  '@effect/schema@0.75.2':
-    resolution: {integrity: sha512-kU93nBeWXP2CwxspZsSHVQx5xbgZ3OV7UYwhqst7iv01cd2Dk00kIP33PhIWEJVJi30uwbTu8nKVjsHANtgpig==}
-    peerDependencies:
-      effect: ^3.9.1
+      effect: ^3.10.4
 
   '@esbuild/aix-ppc64@0.23.1':
     resolution: {integrity: sha512-6VhYk1diRqrhBAqpJEdjASR/+WVRtfjpqKuNw11cLiaWpAT/Uu+nokB+UJnevzy/P9C/ty6AOe0dwueMrGh/iQ==}
@@ -512,8 +506,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.9.1:
-    resolution: {integrity: sha512-dxd+eiCqxOriBM12EQ6uIjn3cJpKIP7DfqafWTVEb45aMO157iEeDcO09SEdVSAy/OqpFlRF+4Lx7Hei1ipvOA==}
+  effect@3.10.4:
+    resolution: {integrity: sha512-D7Mryq8jylT0fIGrgXEn2TublO/BhduRwzlqV5z1l/QFY6grs7UOyyomlAOFMK9ArSYiLgrOSMQ/Cr/cIOeU2Q==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -922,17 +916,11 @@ snapshots:
   '@dprint/win32-x64@0.47.2':
     optional: true
 
-  '@effect/platform@0.68.1(@effect/schema@0.75.2(effect@3.9.1))(effect@3.9.1)':
+  '@effect/platform@0.69.9(effect@3.10.4)':
     dependencies:
-      '@effect/schema': 0.75.2(effect@3.9.1)
-      effect: 3.9.1
+      effect: 3.10.4
       find-my-way-ts: 0.1.5
       multipasta: 0.2.5
-
-  '@effect/schema@0.75.2(effect@3.9.1)':
-    dependencies:
-      effect: 3.9.1
-      fast-check: 3.22.0
 
   '@esbuild/aix-ppc64@0.23.1':
     optional: true
@@ -1206,7 +1194,9 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.9.1: {}
+  effect@3.10.4:
+    dependencies:
+      fast-check: 3.22.0
 
   emoji-regex@8.0.0: {}
 
