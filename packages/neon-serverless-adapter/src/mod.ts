@@ -2,12 +2,8 @@ import * as Socket from '@effect/platform/Socket'
 import * as neon from '@neondatabase/serverless'
 import type { DrizzleConfig } from 'drizzle-orm'
 import { drizzle, type NeonDatabase } from 'drizzle-orm/neon-serverless'
-import { Config as C, Effect, pipe } from 'effect'
-import type { ConfigError } from 'effect/ConfigError'
+import { Config as C, Context, Effect } from 'effect'
 
-/**
- * @public
- */
 export namespace Adapter {
   export type TSchema = Record<string, unknown>
 
@@ -21,8 +17,8 @@ export namespace Adapter {
       pool: Pool
       db: DB<T>
     },
-    ConfigError,
-    Socket.WebSocketConstructor
+    never,
+    Socket.WebSocketConstructor | AdapterConfig
   >
 
   export type Config = Readonly<{
@@ -37,7 +33,8 @@ export function Adapter<T extends Adapter.TSchema = Record<string, never>>(
   options?: Adapter.Options<T>,
 ): Adapter.Adapter<T> {
   return Effect.gen(function*() {
-    const connectionString = yield* Config.DATABASE_URL
+    const config = yield* AdapterConfig
+    const connectionString = config.DATABASE_POOL_URL
     const webSocketConstructor = yield* Socket.WebSocketConstructor
 
     yield* Effect.sync(() => {
@@ -55,12 +52,6 @@ export function Adapter<T extends Adapter.TSchema = Record<string, never>>(
   })
 }
 
-/**
- * @public
- */
-export const Config: Adapter.Config = Object.freeze({
-  DATABASE_URL: pipe(
-    C.nonEmptyString('DATABASE_URL'),
-    C.withDescription('Neon database connection string'),
-  ),
-})
+export class AdapterConfig extends Context.Tag('AdapterConfig')<AdapterConfig, {
+  readonly DATABASE_POOL_URL: string
+}>() {}

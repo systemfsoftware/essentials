@@ -32,8 +32,7 @@
   "scripts": {
     "prepare": "pnpm turbo build",
     "clean": "rimraf dist .tshy .tshy-build",
-    "build": "pnpm run clean && tshy && pnpm run extract",
-    "extract": "api-extractor run"
+    "build": "pnpm run clean && tshy"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.5"
