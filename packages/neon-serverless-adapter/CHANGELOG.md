@@ -1,5 +1,12 @@
 # @systemfsoftware/neon-serverless-adapter
 
+## 0.3.0
+
+### Minor Changes
+
+- 53c9ab3: feat: require explicit DATABASE_POOL_URL configuration
+  feat: remove API Extractor dependency
+
 ## 0.2.0
 
 ### Minor Changes
