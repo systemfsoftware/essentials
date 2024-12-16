@@ -4,18 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-catalogs:
-  default:
-    '@effect/platform':
-      specifier: ^0.69.9
-      version: 0.69.9
-    drizzle-orm:
-      specifier: ^0.34.1
-      version: 0.34.1
-    effect:
-      specifier: ^3.10.4
-      version: 3.10.4
-
 importers:
 
   .:
@@ -72,14 +60,14 @@ importers:
         specifier: workspace:^
         version: link:../api-extractor
       effect:
-        specifier: 'catalog:'
-        version: 3.10.4
+        specifier: ^3.10.4
+        version: 3.11.7
 
   packages/neon-serverless-adapter:
     dependencies:
       '@effect/platform':
-        specifier: 'catalog:'
-        version: 0.69.9(effect@3.10.4)
+        specifier: ^0.69.9
+        version: 0.69.9(effect@3.11.7)
       '@neondatabase/serverless':
         specifier: ^0.9.5
         version: 0.9.5
@@ -88,11 +76,11 @@ importers:
         specifier: workspace:^
         version: link:../api-extractor
       drizzle-orm:
-        specifier: 'catalog:'
+        specifier: ^0.34.1
         version: 0.34.1(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)
       effect:
-        specifier: 'catalog:'
-        version: 3.10.4
+        specifier: ^3.10.4
+        version: 3.11.7
 
 packages:
 
@@ -522,9 +510,6 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.10.4:
-    resolution: {integrity: sha512-D7Mryq8jylT0fIGrgXEn2TublO/BhduRwzlqV5z1l/QFY6grs7UOyyomlAOFMK9ArSYiLgrOSMQ/Cr/cIOeU2Q==}
-
   effect@3.11.7:
     resolution: {integrity: sha512-laj+TCxWGn0eOv6jNmS9vavMO01Z4vvRr7v5airaOUfE7Zr5PrHiECpiI5HRvOewxa1im/4EcOvRodOZ1S2Y7Q==}
 
@@ -937,9 +922,9 @@ snapshots:
   '@dprint/win32-x64@0.47.2':
     optional: true
 
-  '@effect/platform@0.69.9(effect@3.10.4)':
+  '@effect/platform@0.69.9(effect@3.11.7)':
     dependencies:
-      effect: 3.10.4
+      effect: 3.11.7
       find-my-way-ts: 0.1.5
       multipasta: 0.2.5
 
@@ -1214,10 +1199,6 @@ snapshots:
       '@types/pg': 8.11.6
 
   eastasianwidth@0.2.0: {}
-
-  effect@3.10.4:
-    dependencies:
-      fast-check: 3.22.0
 
   effect@3.11.7:
     dependencies:

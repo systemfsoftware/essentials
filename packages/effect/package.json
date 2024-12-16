@@ -60,10 +60,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "effect": "catalog:",
+    "effect": "^3.10.4",
     "@systemfsoftware/api-extractor": "workspace:^"
   },
   "peerDependencies": {
-    "effect": "^3.8.0"
+    "effect": "^3.10.4"
   }
 }
