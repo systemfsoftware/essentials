@@ -1,0 +1,59 @@
+{
+  "name": "@systemfsoftware/apify-schema",
+  "version": "0.0.1",
+  "author": "Ryan Lee <ryanleecode@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/systemfsoftware/essentials.git"
+  },
+  "type": "module",
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts",
+  "module": "./dist/esm/mod.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "@systemfsoftware/source": "./src/mod.ts",
+        "types": "./dist/esm/mod.d.ts",
+        "default": "./dist/esm/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/mod.d.ts",
+        "default": "./dist/commonjs/mod.js"
+      }
+    }
+  },
+  "keywords": [
+    "apify"
+  ],
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "project": "./tsconfig.build.json",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/mod.ts"
+    },
+    "sourceDialects": [
+      "@systemfsoftware/source"
+    ]
+  },
+  "scripts": {
+    "prepare": "pnpm turbo build",
+    "clean": "rimraf dist .tshy .tshy-build",
+    "build": "pnpm run clean && tshy && pnpm run extract",
+    "extract": "api-extractor run"
+  },
+  "dependencies": {
+    "@apify/consts": "^2.35.0"
+  },
+  "devDependencies": {
+    "@systemfsoftware/api-extractor": "workspace:^",
+    "effect": "^3.10.4"
+  },
+  "peerDependencies": {
+    "effect": "^3.10.4"
+  }
+}

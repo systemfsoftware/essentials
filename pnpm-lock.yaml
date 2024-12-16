@@ -47,6 +47,19 @@ importers:
 
   packages/api-extractor: {}
 
+  packages/apify-schema:
+    dependencies:
+      '@apify/consts':
+        specifier: ^2.35.0
+        version: 2.35.0
+    devDependencies:
+      '@systemfsoftware/api-extractor':
+        specifier: workspace:^
+        version: link:../api-extractor
+      effect:
+        specifier: ^3.10.4
+        version: 3.11.7
+
   packages/aws:
     devDependencies:
       '@systemfsoftware/api-extractor':
@@ -82,6 +95,9 @@ importers:
         version: 3.10.4
 
 packages:
+
+  '@apify/consts@2.35.0':
+    resolution: {integrity: sha512-ICUoIzyxSWuQZXtMwMxrnfogPTagQS2fDY1jgZZCikv4WF0c4a3/HKpIprHZ3lI90+jjF0r8TtEVEcWIaRgP4Q==}
 
   '@dprint/darwin-arm64@0.47.2':
     resolution: {integrity: sha512-mVPFBJsXxGDKHHCAY8wbqOyS4028g1bN15H9tivCnPAjwaZhkUimZHXWejXADjhGn+Xm2SlakugY9PY/68pH3Q==}
@@ -509,6 +525,9 @@ packages:
   effect@3.10.4:
     resolution: {integrity: sha512-D7Mryq8jylT0fIGrgXEn2TublO/BhduRwzlqV5z1l/QFY6grs7UOyyomlAOFMK9ArSYiLgrOSMQ/Cr/cIOeU2Q==}
 
+  effect@3.11.7:
+    resolution: {integrity: sha512-laj+TCxWGn0eOv6jNmS9vavMO01Z4vvRr7v5airaOUfE7Zr5PrHiECpiI5HRvOewxa1im/4EcOvRodOZ1S2Y7Q==}
+
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
 
@@ -892,6 +911,8 @@ packages:
 
 snapshots:
 
+  '@apify/consts@2.35.0': {}
+
   '@dprint/darwin-arm64@0.47.2':
     optional: true
 
@@ -1195,6 +1216,10 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   effect@3.10.4:
+    dependencies:
+      fast-check: 3.22.0
+
+  effect@3.11.7:
     dependencies:
       fast-check: 3.22.0
 
