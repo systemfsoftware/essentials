@@ -20,6 +20,13 @@ updates:
       otel:
         patterns:
           - "@opentelemetry/*"
+      tooling:
+        patterns:
+          - "typescript"
+          - "turbo"
+          - "tsx"
+          - "dprint"
+          - "@microsoft/api-extractor"
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
