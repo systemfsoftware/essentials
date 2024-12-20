@@ -45,8 +45,8 @@ importers:
         specifier: workspace:^
         version: link:../api-extractor
       effect:
-        specifier: ^3.11.8
-        version: 3.11.8
+        specifier: ^3.11.9
+        version: 3.11.9
 
   packages/aws:
     devDependencies:
@@ -60,14 +60,14 @@ importers:
         specifier: workspace:^
         version: link:../api-extractor
       effect:
-        specifier: ^3.11.8
-        version: 3.11.8
+        specifier: ^3.11.9
+        version: 3.11.9
 
   packages/neon-serverless-adapter:
     dependencies:
       '@effect/platform':
         specifier: ^0.69.9
-        version: 0.69.9(effect@3.11.8)
+        version: 0.69.9(effect@3.11.9)
       '@neondatabase/serverless':
         specifier: ^0.9.5
         version: 0.9.5
@@ -79,8 +79,8 @@ importers:
         specifier: ^0.34.1
         version: 0.34.1(@neondatabase/serverless@0.9.5)(@types/pg@8.11.6)
       effect:
-        specifier: ^3.11.8
-        version: 3.11.8
+        specifier: ^3.11.9
+        version: 3.11.9
 
 packages:
 
@@ -515,8 +515,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.11.8:
-    resolution: {integrity: sha512-N16cwqUDqG7lyYiFyt+in0+OS0Lg9pkMmGPSwxu2j9ZhRHI8S8D69+ffXX+afhl80r6syBSSkkIg/bYRjGGf7A==}
+  effect@3.11.9:
+    resolution: {integrity: sha512-BeEOFVpe+f7S9mTiA2CLIzi1ywxgF1fUbcAank4jwdd6P0ZHQhaW3XVPZ7vkCNDTqmJs2f/gN2uV+Yw0ZqfDng==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -930,9 +930,9 @@ snapshots:
   '@dprint/win32-x64@0.47.6':
     optional: true
 
-  '@effect/platform@0.69.9(effect@3.11.8)':
+  '@effect/platform@0.69.9(effect@3.11.9)':
     dependencies:
-      effect: 3.11.8
+      effect: 3.11.9
       find-my-way-ts: 0.1.5
       multipasta: 0.2.5
 
@@ -1209,7 +1209,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.11.8:
+  effect@3.11.9:
     dependencies:
       fast-check: 3.22.0
 
