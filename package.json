@@ -13,7 +13,7 @@
   "devDependencies": {
     "@microsoft/api-extractor": "^7.48.1",
     "@total-typescript/tsconfig": "^1.0.4",
-    "dprint": "^0.47.6",
+    "dprint": "^0.48.0",
     "rimraf": "^6.0.1",
     "tshy": "^3.0.2",
     "tsx": "^4.19.2",
