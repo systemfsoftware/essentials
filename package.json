@@ -11,14 +11,14 @@
     "format:check": "dprint check"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.48.1",
+    "@microsoft/api-extractor": "^7.50.0",
     "@total-typescript/tsconfig": "^1.0.4",
-    "dprint": "^0.47.6",
+    "dprint": "^0.49.0",
     "rimraf": "^6.0.1",
     "tshy": "^3.0.2",
     "tsx": "^4.19.2",
-    "turbo": "^2.3.3",
-    "typescript": "^5.7.2"
+    "turbo": "^2.4.2",
+    "typescript": "^5.7.3"
   },
   "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca"
 }
