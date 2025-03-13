@@ -38,8 +38,8 @@ importers:
   packages/apify-schema:
     dependencies:
       '@apify/consts':
-        specifier: ^2.35.0
-        version: 2.35.0
+        specifier: ^2.38.0
+        version: 2.38.0
     devDependencies:
       '@systemfsoftware/api-extractor':
         specifier: workspace:^
@@ -84,8 +84,8 @@ importers:
 
 packages:
 
-  '@apify/consts@2.35.0':
-    resolution: {integrity: sha512-ICUoIzyxSWuQZXtMwMxrnfogPTagQS2fDY1jgZZCikv4WF0c4a3/HKpIprHZ3lI90+jjF0r8TtEVEcWIaRgP4Q==}
+  '@apify/consts@2.38.0':
+    resolution: {integrity: sha512-pP/sNuW+6ekdBZHLBy1alyzrxzcSc4xEhVgHx8Rwoyc7Q8nAA6Oybi7ChZv3KLToPITYCpSoSmopDoqrajld0A==}
 
   '@dprint/darwin-arm64@0.47.6':
     resolution: {integrity: sha512-DrtKVOH7Ue6QYsqsUfUwBlTkSZNF2j35xqyI6KimUT1ulgUPocLG53JC/Aej9KuSCPmt4M3J40xxPKRgIM4jPA==}
@@ -901,7 +901,7 @@ packages:
 
 snapshots:
 
-  '@apify/consts@2.35.0': {}
+  '@apify/consts@2.38.0': {}
 
   '@dprint/darwin-arm64@0.47.6':
     optional: true
