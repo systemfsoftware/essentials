@@ -47,7 +47,7 @@
     "extract": "api-extractor run"
   },
   "dependencies": {
-    "@apify/consts": "^2.35.0"
+    "@apify/consts": "^2.38.0"
   },
   "devDependencies": {
     "@systemfsoftware/api-extractor": "workspace:^",
