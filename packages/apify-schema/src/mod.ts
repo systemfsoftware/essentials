@@ -54,7 +54,7 @@ export const ActorRunResult = S.Struct({
     buildId: S.String,
     startedAt: S.Date,
     finishedAt: S.Date,
-    buildNumber: S.String,
+    buildNumber: S.optionalWith(S.String, { nullable: true }),
     usageTotalUsd: S.optionalWith(S.Number, { nullable: true }),
     defaultDatasetId: S.String,
     defaultRequestQueueId: S.String,
