@@ -1,33 +1,79 @@
+################################################################################
+# Base Configuration
+################################################################################
 version: 2
 
 updates:
+  ################################################################################
+  # NPM Dependencies
+  ################################################################################
   - package-ecosystem: npm
     directory: "/"
     labels:
       - "automerge"
     schedule:
-      interval: daily
+      interval: weekly
     open-pull-requests-limit: 25
+
     groups:
-      drizzle:
-        patterns:
-          - "drizzle-kit"
-          - "drizzle-orm"
-      effect:
+      ############################################################################
+      # Minor and Patch Updates
+      ############################################################################
+      effect-minor-patch:
         patterns:
           - "@effect/*"
           - "effect"
-      otel:
+        update-types: ["minor", "patch"]
+
+      drizzle-minor-patch:
         patterns:
-          - "@opentelemetry/*"
-      tooling:
+          - "drizzle-orm"
+          - "drizzle-kit"
+        update-types: ["minor", "patch"]
+
+      other-minor-patch:
+        patterns: ["*"]
+        exclude-patterns:
+          - "@effect/*"
+          - "effect"
+          - "drizzle-orm"
+          - "drizzle-kit"
+        update-types: ["minor", "patch"]
+
+      ############################################################################
+      # Major Updates
+      ############################################################################
+      effect-major:
+        patterns:
+          - "@effect/*"
+          - "effect"
+        update-types: ["major"]
+
+      drizzle-major:
+        patterns:
+          - "drizzle-orm"
+          - "drizzle-kit"
+        update-types: ["major"]
+
+      typescript-major:
         patterns:
           - "typescript"
-          - "turbo"
-          - "tsx"
-          - "dprint"
-          - "@microsoft/api-extractor"
+          - "@typescript-eslint/*"
+          - "@total-typescript/*"
+        update-types: ["major"]
+
+      vitest-major:
+        patterns:
+          - "vitest"
+          - "@vitest/*"
+        update-types: ["major"]
+
+  ################################################################################
+  # GitHub Actions
+  ################################################################################
   - package-ecosystem: github-actions
     directory: "/"
+    labels:
+      - "automerge"
     schedule:
       interval: weekly
