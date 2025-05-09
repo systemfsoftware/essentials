@@ -35,7 +35,7 @@
     "build": "pnpm run clean && tshy"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.9.5"
+    "@neondatabase/serverless": "^1.0.0"
   },
   "devDependencies": {
     "effect": "^3.11.8",
