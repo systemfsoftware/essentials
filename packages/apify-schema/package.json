@@ -51,9 +51,9 @@
   },
   "devDependencies": {
     "@systemfsoftware/api-extractor": "workspace:^",
-    "effect": "^3.14.21"
+    "effect": "^3.15.0"
   },
   "peerDependencies": {
-    "effect": "^3.14.21"
+    "effect": "^3.15.0"
   }
 }
